@@ -1,24 +1,24 @@
 getwd()
 
 list.files()
-
+# Loading the Facebook TSV file
 facebook_data <- read.csv('pseudo_facebook.tsv', sep = '\t')
 library(ggplot2)
+
+# Loading the variables available in the dataset
 names(pf)
 
-# Scatterplot
+# Ploting the Scatterplot of age Vs friend_count using qplot
 
 qplot(x = age, y = friend_count, data = pf)
 qplot(age, friend_count, dat)
 
-ggplot(aes(x = age, y = friend_count), data = pf) +
-  geom_point(alpha = 1/20) +
-  xlim(13, 90)
-
+# Ploting the Scatterplot of age Vs friend_count using ggplot
 ggplot(aes(x = age, y = friend_count), data = pf) +
   geom_jitter(alpha = 1/20) +
   xlim(13, 90)
 
+# To print summary of age variable
 summary(pf$age)
 
 ggplot(aes(x = age, y = friend_count), data = pf) +
