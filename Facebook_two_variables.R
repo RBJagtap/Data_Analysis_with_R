@@ -104,7 +104,3 @@ pf$age_with_months <- pf$age + (1 - dob_month) / 12
 
 pf$age_with_months <- with(pf$age + (1 - dob_month / 12))
 
-
-#Problem Set of Two variables
-
-ggplot(aes(x = price, y = x, data = pr$diamonds)) + geom_point()
