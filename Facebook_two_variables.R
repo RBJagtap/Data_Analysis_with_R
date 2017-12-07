@@ -1,8 +1,10 @@
-getwd()
-
+# Find out the working dictionary path.
+getwd() 
+# list the files which are available at the working dictionary
 list.files()
 # Loading the Facebook TSV file
 facebook_data <- read.csv('pseudo_facebook.tsv', sep = '\t')
+#Load the ggplot library. First Install and then Install
 library(ggplot2)
 
 # Loading the variables available in the dataset
@@ -11,7 +13,7 @@ names(pf)
 # Ploting the Scatterplot of age Vs friend_count using qplot
 
 qplot(x = age, y = friend_count, data = pf)
-qplot(age, friend_count, dat)
+qplot(age, friend_count, data = pf)
 
 # Ploting the Scatterplot of age Vs friend_count using ggplot
 ggplot(aes(x = age, y = friend_count), data = pf) +
