@@ -1,5 +1,7 @@
 # Find out the working dictionary path.
 getwd() 
+# In order to set new working dictionary path.
+setwd()
 # list the files which are available at the working dictionary
 list.files()
 # Loading the Facebook TSV file
