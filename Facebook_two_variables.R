@@ -17,7 +17,8 @@ names(pf)
 qplot(x = age, y = friend_count, data = pf)
 qplot(age, friend_count, data = pf)
 
-# Ploting the Scatterplot of age Vs friend_count using ggplot
+# Ploting the Scatterplot of age Vs friend_count using ggplot, ggplot2 is having a feature called aesthetics which can be used to map the variables.
+# "aes" is generally used with ggplot
 ggplot(aes(x = age, y = friend_count), data = pf) +
   geom_jitter(alpha = 1/20) +
   xlim(13, 90)
