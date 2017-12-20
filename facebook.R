@@ -14,22 +14,22 @@ qplot(x = dob_day, data = pf) +
 
 qplot(x=dob_day, data = pf) +
   scale_x_continuous(breaks = 1:31) +
-  facet_wrap(~dob_month,ncol = 3)   # dob for each one for each one for all year
+  facet_wrap(~dob_month,ncol = 3)      # dob for each one for each one for all year
 
 qplot(x = friend_count, data=pf) 
 
-qplot(x = friend_count, data=pf, xlim = c(0, 1000)) # restrict friend)count to 1000
+qplot(x = friend_count, data=pf, xlim = c(0, 1000))    # restrict friend)count to 1000
 
 qplot(x = friend_count, data = pf) +
-  scale_x_continuous(limits = c(0, 1000)) # Restrict friend count to 1000
+  scale_x_continuous(limits = c(0, 1000))     # Restrict friend count to 1000
 
 
 qplot(x = friend_count, data = pf, binwidth = 25) +
-  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, 50)) #Setting min and max limit with sequence 
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, 50))    #Setting min and max limit with sequence 
 
 qplot(x = friend_count, data = pf, binwidth = 25) +
   scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, 50)) + 
-  facet_wrap(~gender) #two seperate histograms for male and female
+  facet_wrap(~gender)   #two seperate histograms for male and female
 
 qplot(x = friend_count, data = na.omit(pf), binwidth = 10) +
   scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, 50)) +
