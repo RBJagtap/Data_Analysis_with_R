@@ -1,16 +1,9 @@
+facebook_data <- read.csv('pseudo_facebook.tsv', sep = '\t') # Reading the CSV file
 
-getwd()
+library(ggplot2) # Using the library called ggplot2
 
-list.files()
-
-facebook_data <- read.csv('pseudo_facebook.tsv', sep = '\t')
-library(ggplot2)
-names(pf)
 qplot(x = dob_day, data = pf)+
   scale_x_discrete(breaks=1:31)
-
-qplot(x = dob_day, data = pf) +
-  scale_x_continuous(breaks=1:31)
 
 qplot(x=dob_day, data = pf) +
   scale_x_continuous(breaks = 1:31) +
