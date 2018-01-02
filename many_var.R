@@ -1,11 +1,6 @@
 getwd()
-
-list.files()
-
 facebook_data <- read.csv('pseudo_facebook.tsv', sep = '\t')
 library(ggplot2)
-names(pf)
-
 library(dplyr)
 age_group <- group_by(pf, age)
 pf.fc_by_age <- summarise(age_group,
